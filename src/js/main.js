@@ -35,6 +35,8 @@ $(document).ready(function () {
 
             btnSaveChange.click(function () {
                 $(this).parent().children().toggleClass("hidden");
+                task.text = inp_edit.val();
+                LS_Set();
             });
 
             $(this).parent().children().toggleClass("hidden");
